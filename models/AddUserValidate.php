@@ -34,8 +34,8 @@ class AddUserValidate extends Model
             [['email'], 'email'],
             [['login'], 'string', 'min' => 4],
             [['password'], 'string', 'min' => 6],
-            ['name', 'match', 'pattern' => '/^[A-Z]\w*$/i'],
-            ['surname', 'match', 'pattern' => '/^[A-Z]\w*$/i'],
+            ['name', 'match', 'pattern' => '/^[A-Z]/'],
+            ['surname', 'match', 'pattern' => '/^[A-Z]/'],
             ['login', 'validateLogin'],
             ['email', 'validateEmail'],
         ];
