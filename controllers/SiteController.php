@@ -125,4 +125,10 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    
+    public function actionAdd()
+    {
+        die(fff);
+        //return $this->render('about');
+    }
 }
